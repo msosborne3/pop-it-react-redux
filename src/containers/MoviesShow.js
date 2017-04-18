@@ -13,7 +13,7 @@ const MoviesShow = (props) => {
 };
 
 const mapStateToProps = (state, ownProps) => {
-  const movie = state.movies.find( (movie) => movie.id == ownProps.routeParams.id )
+  const movie = state.movies.find( (movie) => movie.id === ownProps.routeParams.id )
   if (movie) {
     return {
       movie: movie

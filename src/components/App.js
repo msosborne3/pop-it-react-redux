@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import NavBar from './NavBar';
-import MoviesPage from '../containers/MoviesPage';
-import ShowsPage from '../containers/ShowsPage';
+//import MoviesPage from '../containers/MoviesPage';
+//import ShowsPage from '../containers/ShowsPage';
 
-export default (props) => {
+const App =  (props) => {
   return (
     <div>
       <NavBar />
       {props.children}
     </div>
-  )
+  );
 };
+
+export default App;

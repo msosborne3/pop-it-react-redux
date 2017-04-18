@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-//import { addShow } from '../actions';
+import { addShow } from '../actions';
 import { browserHistory } from 'react-router';
 
 class ShowsNew extends Component {
