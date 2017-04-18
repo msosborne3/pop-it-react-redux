@@ -10,6 +10,8 @@ import MoviesPage from './containers/MoviesPage';
 import ShowsPage from './containers/ShowsPage';
 import ShowsShow from './containers/ShowsShow';
 import MoviesShow from './containers/MoviesShow';
+import ShowsNew from './containers/ShowsNew';
+import MoviesNew from './containers/MoviesNew';
 
 const store = createStore(rootReducer);
 
@@ -19,9 +21,11 @@ ReactDOM.render(
       <Route path='/' component={App}>
         <Route path='/movies' component={MoviesPage}>
           <Route path='/movies/:id' component={MoviesShow} />
+          <Route path='/movies/new' component={MoviesNew} />
         </Route>
         <Route path='/shows' component={ShowsPage}>
           <Route path='/shows/:id' component={ShowsShow} />
+          <Route path='/shows/new' component={ShowsNew} />
         </Route>
       </Route>
     </Router>
